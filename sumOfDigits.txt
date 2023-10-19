@@ -1,0 +1,19 @@
+//Compute the sum of the digits of a number (base 10)
+
+algorithm sumOfDigits(n:Integer):Integer{
+
+    variables nStr : String,
+              i, sum : Integer;
+
+    assert n>0;
+
+    nStr<-IntegerToString(n);
+    sum<-0;
+
+    For(i<-0;i<length(nStr);i<-i+1){
+        sum<-sum+StringtoInteger(nStr[i]);
+    }
+
+    Return sum;
+
+}

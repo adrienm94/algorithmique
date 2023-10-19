@@ -1,0 +1,16 @@
+// Prints the multiplication table of n
+
+algorithm multiplicationTable() : void {
+
+    variables n, i : Integer;
+
+    print("Enter an integer :");
+    n <- readInteger();
+
+    For (i<-0;i<=10;i<-i+1){
+        print(IntegerToString(n)+" x "+
+        print(IntegerToString(i)+" = "+
+        IntegerToString(n*i));
+    }
+
+}

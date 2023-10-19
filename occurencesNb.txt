@@ -1,0 +1,16 @@
+// Returns how many times a value appears in an array
+
+algorithm occurencesNb(tab : array of n Real; r : Real) : Integer {
+
+    variables i, occNb : Integer;
+
+    occNb<-0;
+    For (i<-0;i<n;i<-i+1){
+        If (tab[i]=r) Then{
+            occNb<-occNb+1;
+        }
+    }
+
+    Return occNb;
+
+}

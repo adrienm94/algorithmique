@@ -1,0 +1,18 @@
+function orderingBubble(tab : table of n Real) : table of n Real
+
+    var i, j : Integer,
+        temp : Real;
+
+    start    
+    for i going from n-1 to 1 Do
+        for j going from 1 to i Do
+            if tab[j]<tab[j-1] then
+                temp = tab[j];
+                tab[j] = tab[j-1];
+                tab[j-1] = temp;        
+            endif
+        endfor
+    endfor
+    end
+
+endfunction

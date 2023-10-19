@@ -1,0 +1,25 @@
+// Order an array in ascending order by selection ordering
+
+algorithm orderingBySelection(tab : array of n Real) : array of n Real {
+
+    variables i, j, indexMin: Integer,
+              temp : Real;
+
+    For(i<-0;i<=n-2;i<-i+1){
+    	indexMin <- i; 
+    	For(j<-i+1;j<=n-1;j<-j+1){
+            If (tab[j]<tab[indexMin]) Then{
+                indexMin <- j;
+            }
+    	}
+    	If (indexMin <> i) Then{
+    	    temp = tab[indexMin]
+    	    tab[indexMin] = tab[i]
+    	    tab[i] = temp
+    	}
+        
+    }
+
+    Return tab;
+
+}

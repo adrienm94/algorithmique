@@ -1,0 +1,60 @@
+// Compute a sum depending on numbers read
+
+algorithm readNumbersAndPrintSum() : Real {
+
+    variables N, i, cpt : Integer;
+              n, sum : Real; 
+
+    // With 10 numbers
+
+    //sum <- 0;
+    //For (i<-0;i<10;i<-i+1){
+    //    print("Enter a number :");
+    //    n <- readReal();
+    //    sum <- sum + n;
+    //}
+
+    //Return sum;
+
+    // With N numbers
+
+    //sum <- 0;
+    //Repeat {
+    //  print("Give the number of numbers to add :");
+    //  N <- readInteger();
+    //}While (N<0);
+    //For (i<-0;i<N;i<-i+1) Do {
+    //    print("Enter a number :");
+    //    n <- readReal();
+    //    sum <- sum + n;
+    //}
+
+    //Return sum;
+
+    // With some numbers and the first zero ends sum
+
+    //sum <- 0;
+    //i <- 0;
+    //Repeat {
+    //    print("Enter a number :");
+    //    n <- readReal();
+    //    sum <- sum + n;
+    //}While (n<>0);
+
+    //Return sum;
+
+    // The same case as before but we return the arithemtic mean
+
+    //sum <- 0;
+    //i <- 0;
+    //cpt <- 0;
+    //Repeat {
+    //    cpt <- cpt + 1;
+    //    print("Enter a number :");
+    //    n <- readReal();
+    //    sum <- sum + n;
+    //}While (n<>0);
+
+    //Return sum/IntegerToReal(cpt); //print the arithmetic mean
+
+}

@@ -1,0 +1,17 @@
+// Give the index of the minimum of an array
+
+algorithm searchMinIndex(tab : array of n Real) : Real{
+
+    variables i : Integer,
+              minIndex : Integer;
+
+    minIndex<-0;
+    For (i<-1;i<n;i<-i+1){
+        If (tab[i]<tab[minIndex]) Then{
+            minIndex<-i;
+        }
+    }
+
+    Return minIndex;
+
+}

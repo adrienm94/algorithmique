@@ -1,0 +1,17 @@
+// Give the n-th number divisible by 2 and 3
+
+lgorithm nthDivisbleBy2And3(n : Integer) : void { 
+
+    variables compt, j : Integer;
+
+    j <- 2;
+    For (compt<-1;compt<=n;compt<-compt+1){
+        While (j%2<>0 OR j%3<>0){
+            j <- j + 1;
+        }
+    }
+
+    print(Number n°+IntegerToString(n)+" divisible by 2 and 3 : "+
+        IntegertoString(j))
+
+}

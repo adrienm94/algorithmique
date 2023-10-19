@@ -1,0 +1,9 @@
+// Compute the square root of a positive number
+
+algorithm sqrt(number : Real) : Real {
+
+    assert number>=0;
+
+    Return (number)^(1/2);
+
+}

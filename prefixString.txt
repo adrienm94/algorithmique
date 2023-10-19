@@ -1,0 +1,24 @@
+// Check if a string s2 is a prefix of another s1
+
+algorithm prefixString(s1 : array of n Character, s2 : array of m Character) : Boolean {
+
+    variables isPrefix : Boolean;
+              i : Integer;
+
+    isPrefix<-True;
+    If (m>n) Then {
+        isPrefix<-False;
+    }
+    Else {
+        i<-0;
+        While (i<m AND isPrefix) Then{
+            If (s1[i]<>s2[i]) Then{
+                isPrefix<-False;
+            }
+            i<-i+1;
+        }
+    }
+
+    Return equality;
+
+}

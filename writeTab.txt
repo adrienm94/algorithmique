@@ -1,0 +1,11 @@
+// Prints the values of a table
+
+algorithm writeTab(tab : table of n Real) : void {
+
+    variables i : Integer;
+    
+    For (i <- 0; i < n; i <- i + 1){
+       print("tab["+i+"] : "+tab[i]); 
+    }
+
+}

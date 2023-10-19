@@ -1,0 +1,17 @@
+// Compute the sum of the sum of i+j with i in [1,n] and j in [1,i] 
+
+algorithm sumOfSumij(n : Integer) : Integer {
+
+    variables i, j, sum : Integer;
+    
+    sum <- 0;
+    
+    For (i <- 1; i <= n; i <- i + 1){
+        For (j <- 1; j <= i; j <- j + 1){
+	    sum <- sum + i + j;       
+        } 
+    }
+
+    Return sum;
+
+}

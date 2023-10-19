@@ -1,0 +1,20 @@
+// Give all indexes to which minimal values are stocked
+
+algorithm searchAllMinIndex(tab : array of n Real) : array of Real{
+
+    variables i, j : Integer,
+              minIndex : Integer;
+              tabMinIndex : table of occurencesNb(tab, searchMin(tab)) Real;
+
+    min<-searchMin(tab);
+    j<-0;
+    For (i<-0;i<n;i<-i+1){
+        If (tab[i]=min) Then{
+            tabMinIndex[j]<-i;
+            j<-j+1;
+        }
+    }
+
+    Return tabMinIndex;
+
+}

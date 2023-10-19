@@ -1,0 +1,15 @@
+// Compute a salary according to a hour number per week and a hourly rate
+
+algorithm salaryComputing(N : Real, TH : Real) : Real {
+
+    variables salary : Real;
+
+    If (N>35.) Then {
+        salary <- (35.*TH) + ((TH*1.5)*(N-35.));
+    }
+    Else {
+        salary <- TH*N;
+    }
+
+    Return salary;
+}

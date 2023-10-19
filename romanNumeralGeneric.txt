@@ -1,0 +1,36 @@
+// Convert generically a little integer to roman numerals
+
+algorithm romanNumeralGeneric(n : Integer, one : String, five : String, ten : String) : String {
+
+    variables r : String;
+              i : Integer;
+
+    assert 0<n<10;
+
+    If (n>=1 AND n<=3) Then{
+        r<-"";
+        For (i<-1;i<=n;i<-i+1){
+            r<-r+one;
+        }
+    }
+    Else {
+        If (n=4) Then{
+            r<-one+five;
+        }
+    }
+    Else {
+        If (n>=5 AND n<=8) Then{
+            r<-five;
+            For (i<-6;i<=n;i<-i+1){
+                r<-r+one;
+            }   
+        }
+    }
+    Else {
+        If (n=9) Then{
+            r<-one+ten;
+        }
+    }
+
+    Return r;
+}

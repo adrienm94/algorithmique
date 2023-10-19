@@ -1,0 +1,55 @@
+// Convert a little integer to roman numerals
+
+algorithm romanNumeral(n : Integer) : String {
+
+    variables r : String;
+
+    assert 0<n<10;
+
+    If (n=1) Then{
+        r<-"I";
+    }
+    Else {
+        If (n=2) Then{
+            r<-"II";
+        }
+    }
+    Else {
+        If (n=3) Then{
+            r<-"III";
+        }
+    }
+    Else {
+        If (n=4) Then{
+            r<-"IV";
+        }
+    }
+    Else {
+        If (n=5) Then{
+            r<-"V";
+        }
+    }
+    Else {
+        If (n=6) Then{
+            r<-"VI";
+        }
+    }
+    Else {
+        If (n=7) Then{
+            r<-"VII";
+        }
+    }
+    Else {
+        If (n=8) Then{
+            r<-"VII";
+        }
+    }
+    Else {
+        If (n=9) Then{
+            r<-"IX";
+        }
+    }
+
+    Return r;
+
+}

@@ -1,0 +1,26 @@
+// Compute a child price ticket 
+
+algorithm planeChildTicket(fullPrice : Real, age : Integer) : Real {
+
+    variables childPriceTicket : Real;
+
+    If (age<0) Then{ 
+        print("The age must be a positive integer");
+    }
+    Else {
+        If (age<=2) {
+            childPriceTicket <- 0.1*fullPrice;
+        }
+    }
+
+    Else {
+        If (age<=12) {
+            childPriceTicket <- 0.5*fullPrice;
+        }
+    }
+    Else {
+        childPriceTicket <- fullPrice;
+    }
+
+    Return childPriceTicket;
+}

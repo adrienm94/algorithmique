@@ -1,0 +1,23 @@
+algorithm orderingFusion(tab : array of n Real; debut, fin : Integer) : array of n Real{
+
+    variables debut, milieu, fin : Integer,
+             tab1, tab2, tab3 : table of m+n Real;
+
+
+    If (debut >= fin) Then{
+        Return tab;
+    }
+    Else {
+    	milieu = (debut+fin)/2;
+   	tab1<-orderingFusion(tab, debut, milieu);
+   	tab2<-orderingFusion(tab, milieu+1, fin);
+   	
+   	tab3<-fusion(tab1,tab2)
+
+    Return tab3;
+   	
+    }
+
+    
+
+}

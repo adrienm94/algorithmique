@@ -1,0 +1,16 @@
+// Read a value and add it in a table
+
+algorithm readTab(size : Integer) : void {
+
+    variables i : Integer,
+              tab : table of size Real;
+              
+    tab <- [];
+    
+    for (i <- 0; i < size; i <- i + 1){
+        tab[i] <- readReal("Give tab["+i+"] : ");
+    }
+    
+    print(tab);
+
+}

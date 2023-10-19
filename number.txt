@@ -1,0 +1,13 @@
+// Reads a number and prints it
+
+algorithm number() : void{
+
+    variables n : Real;
+
+    Repeat {
+        print("Enter a number :");
+        n <- readReal();
+        print("The number you typed is :"+RealToString(n));
+    } While (n<>0.);
+
+}

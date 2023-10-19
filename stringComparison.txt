@@ -1,0 +1,24 @@
+// Check if two strings are equal
+
+algorithm stringComparison(s1 : array of n Character, s2 : array of m Character) : Boolean {
+
+    variables equality : Boolean;
+              i : Integer;
+
+    equality<-True;
+    If (m<>n) Then {
+        equality<-False;
+    }
+    Else {
+        i<-0;
+        While (i<n AND equality) Then{
+            If (s1[i]<>s2[i]) Then{
+                equality<-False;
+            }
+            i<-i+1;
+        }
+    }
+
+    Return equality;
+
+}

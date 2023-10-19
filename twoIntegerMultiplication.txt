@@ -1,0 +1,23 @@
+// Give the result of the multiplication of two integers without using the "x" sign
+
+algorithm twoIntegerMultiplication(x : Integer, y : Integer) : Integer {
+
+    variables i : Integer,
+              produit : Integer;
+
+    produit <- 0;
+
+
+    For (i<-0:i<abs(x);i<-i+1) {
+        produit <- produit + abs(y);
+    }
+
+    If (x<0 and y>0) or (x>0 and y<0) Then {
+        produit = -produit
+    }
+
+
+    Return produit;
+
+}
+

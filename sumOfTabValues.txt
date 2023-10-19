@@ -1,0 +1,13 @@
+// Returns the sum of elements in a table
+
+algorithm sumOfTableValues(tab : table of n Integer) : Integer {
+
+    variables i, sum : Integer;
+
+    sum <- 0;
+    For (i <- 0; i < n; i <- i + 1){
+        sum <- sum + tab[i];
+    }
+
+    Return sum;
+}

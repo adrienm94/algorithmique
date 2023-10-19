@@ -1,0 +1,23 @@
+// Check if a sentence is a palindrome
+
+algorithm palindrome(sentence : array of n Character) : Boolean {
+
+    variables i : Integer,
+              isPalindrome : Boolean;
+
+    isPalindrome<-True;
+    i<-0;
+    While (i<n/2 AND isPalindrome) Do{
+        If (sentence[i]<>sentence[n-i-1]) Then{
+            isPalindrome<-False;
+        }
+        i<-i+1;
+    }
+    Return isPalindrome;
+}
+
+// Another version using methods
+
+algorithm palindrome(sentence : array of n Character) : Boolean {
+    Return stringComparison(sentence,invert(sentence));
+}

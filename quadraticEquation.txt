@@ -1,0 +1,26 @@
+// Resolution of the equation ax²+bx+c=0 with x real;
+
+algorithm quadraticEquation() : void {
+
+    variables a, b, c, delta, x0, x1, x2 : Real;
+    	      
+    	     
+    print("Resolution of the equation ax²+bx+c=0 with x real");
+    a <- readInteger("Type a :");
+    b <- readInteger("Type b :");
+    c <- readInteger("Type c :");
+    delta <- b**2 - 4*a*c;
+    if (delta > 0) then {
+        x1 <- (-b + sqrt(delta))/(2*a);
+        x2 <- (-b - sqrt(delta))/(2*a);
+        print("Two solutions : "+x1+" and "+x2);
+    }
+    else if (delta = 0) then {
+        x0 <- -b/(2*a);
+        print("One solution : "+x0);
+    }
+    else {
+        print("This quadratic equation has not any solution in the set of real numbers.");
+    }
+
+}

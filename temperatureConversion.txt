@@ -1,0 +1,12 @@
+// Convert a Celsius temperature in Fahrenheit
+
+algorithm temperatureConversion() : void {
+
+    variables temp_F, temp_C : Real;
+
+    print("Type a temperature in °C to convert in °F :");
+    temp_C <- readReal();
+    temp_F <- temp_C * 1.8 + 32.;
+    print(RealToString(temp_C)+"°C equals to "+RealToString(temp_F)+"°F.");
+
+}

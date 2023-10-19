@@ -1,0 +1,24 @@
+// Simple search of a value in an array
+// Returns index
+
+algorithm naiveSearch(tab : array of n Real, value : Real) : Integer {
+
+    variables i, index : Integer;
+
+    index<--1;
+    i<-0;
+
+    If NOT(estTrie(tab)) Then{
+        tri(tab);
+    }
+
+    While(i<n and index=-1) Do{
+        If (tab[i]=val){
+            index<-i;
+        }
+        i<-i+1;
+    }
+
+    Return index;
+
+}

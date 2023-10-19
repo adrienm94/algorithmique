@@ -1,0 +1,21 @@
+// To exchange the values of two variables
+
+algorithm TwoVariablesExchange() : void {
+
+    variables a, b, temp : Integer;
+
+    print("Value for a :");
+    a <- readInteger();
+    print("Value for b :");
+    b <- readInteger();
+    print("a="+IntegerToString(a)+" and b="+IntegerToString(b)+".");
+    temp <- b;
+    b <- a;
+    a <- temp;
+    // ou :
+    // a <- a + b;  
+    // b <- a - b;
+    // a <- a - b;
+    // print("Now a="+IntegerToString(a)+" and b="+IntegerToString(b)+".");
+
+}

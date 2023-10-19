@@ -1,0 +1,40 @@
+// Convert an integer to roman numerals
+
+algorithm roman(n : Integer) : String {
+
+    variables digit : Integer;
+              nStr ,r : String;
+
+    assert 0<n<4000;
+
+    nStr<-IntegerToString(n);
+    digit<-StringToInteger(nStr);
+    r<-"";
+
+    If (taille(nStr)=4){
+        r<-r+nromanNumeralGeneric(digit[0],"M"," "," ");
+        r<-r+nromanNumeralGeneric(digit[1],"C","D","M");
+        r<-r+nromanNumeralGeneric(digit[2],"X","L","C");
+        r<-r+nromanNumeralGeneric(digit[3],"I","V","X");
+    }
+    Else{
+        If (taille(nStr)=3) Then{
+            r<-r+nromanNumeralGeneric(digit[0],"C","D","M");
+            r<-r+nromanNumeralGeneric(digit[1],"X","L","C");
+            r<-r+nromanNumeralGeneric(digit[2],"I","V","X");
+        }
+    }
+    Else{
+        If (taille(nStr)=2) Then{
+            r<-r+nromanNumeralGeneric(digit[0],"X","L","C");
+            r<-r+nromanNumeralGeneric(digit[1],"I","V","X");
+        }
+    }
+    Else{
+        If (taille(nStr)=1) Then{
+            r<-r+nromanNumeralGeneric(digit[0],"I","V","X");
+        }
+    }
+    
+    Return r;
+}

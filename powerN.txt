@@ -1,0 +1,28 @@
+// Compute an integer power of a number
+
+algorithm powerN(number : Real, n : Integer): Real{
+
+    variables i : Integer,
+              res : Real;
+
+    res<-0;
+
+    If (n>0) Then{
+        For(i<-0;i<n;i<-i+1){
+            res=res*number;
+        }
+    }
+    Else{
+        If (n<0) Then{
+            For(i<-0;i<n;i<-i+1){
+                res=res*(1.0/number);
+            }
+    }
+    Else{
+        res<-1;
+    }
+
+
+    Return res;
+
+}
