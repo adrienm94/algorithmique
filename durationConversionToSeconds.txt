@@ -1,0 +1,18 @@
+// Convert a time in days, hours, minutes and seconds into seconds
+
+algorithm durationConversionToSeconds(days : Integer, hours : Integer, minutes : Integer, seconds : Integer) : Integer {
+
+    variables totalSeconds : Integer;
+
+    If (days>=0 AND hours>=0 AND hours<=24 
+    AND minutes>=0 AND minutes<60 AND seconds>=0 
+    AND seconds<60) Then{
+        totalSeconds<-86400*days+3600*hours+60*minutes+seconds;
+    }
+    Else{
+        print("One of the arguments is not valid.")
+    }
+
+    Return totalSeconds;
+    
+}

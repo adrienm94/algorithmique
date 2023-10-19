@@ -1,0 +1,19 @@
+// Check in an array if the sum of two consecutive numbers is equal to a value
+
+algorithm isEqualSumOfTwoConsecutiveNumInTab(tab : array of n Real,r : Real) : Boolean {
+
+    variables i : Integer;
+              equalityFound : Boolean;
+
+    equalityFound<-False;
+    i<-1;
+    While (i<n and equalityFound=False) Do{
+        If (tab[i]+tab[i-1]=r) Then{
+            equalityFound<-True;
+        }
+        i<-i+1;
+    }
+
+    Return equality;
+
+}

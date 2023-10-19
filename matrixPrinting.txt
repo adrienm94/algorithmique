@@ -1,0 +1,14 @@
+// Print a matrix
+
+algorithm matrixPrinting(matrix : array of n array of m Real) : array of n array of m Real {
+
+    variables lin, col : Integer;
+
+    For (lin<-0;lin<n;lin<-lin+1){
+        For (col<-0;col<m;col<-col+1){
+            print(IntegerToString(matrix[lin][col])+" ");
+        }
+        print("\n");
+    }
+
+}

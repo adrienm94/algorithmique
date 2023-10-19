@@ -1,0 +1,22 @@
+// Give the number of occurences of a digit in a number (base 10)
+
+algorithm countNumberOfDigit(n:Integer, digit : Integer): Integer {
+    
+    variables nStr : String;
+              occurencesOfDigit, i : Integer;
+
+    assert n>0;
+    assert 0<=digit<=9;
+    
+    nStr<-IntegerToString(n);
+    occurencesOfDigit<-0;
+
+    For(i<-0;i<length(nStr);i<-i+1){
+        If (nStr[i]=digit) Then{
+            occurencesOfDigit=occurencesOfDigit+1;
+        }
+    }
+
+
+    Return occurencesOfDigit;
+}

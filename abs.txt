@@ -1,0 +1,16 @@
+// Compute absolute value of a number
+
+algorithm abs(number : Real) : Real {
+
+    variables abs : Real;
+
+    If (number<0) Then{
+        abs<--number;
+    }
+    Else{
+        abs<-number;
+    }
+
+    Return abs;
+
+} 

@@ -1,0 +1,27 @@
+// Compute the nth ranked term of the Fibonnaci suite
+
+algorithm fibonnaci(n : Integer):Integer{
+
+    variables fn, fn_1, fn_2, i : Integer;
+
+    assert n>0;
+
+    If (n=0 OR n=1) Then{
+        fn<-1;
+    }
+    Else{
+    	fn_1<-1;
+   	fn_2<-1;
+    	fn<-fn_1+fn_2;
+        i<-3;
+        While(i<=n){
+            fn_2<-fn_1;
+            fn_1<-fn;
+            fn<-fn_1+fn_2;
+            i<-i+1;
+        }
+    }
+
+    Return fn
+
+}

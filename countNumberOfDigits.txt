@@ -1,0 +1,14 @@
+// Give the number of digits of a number (base 10)
+
+algorithm countNumberOfDigits(n:Integer): Integer {
+    
+    variables nStr : String,
+              numberOfDigits : Integer;
+
+    assert n>=0;
+
+    nStr<-IntegerToString(n);
+    numberOfDigits<-length(nStr);
+
+    Return numberOfDigits;
+}

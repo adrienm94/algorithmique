@@ -1,0 +1,45 @@
+// Read a time in seconds and convert it into days, hours, minutes and seconds
+
+algorithm durationConversionFromSeconds() : (Integer, Integer, Integer, Integer) {
+
+    variables time : Real;
+              days, hours, minutes, seconds : Integer;
+
+    Repeat {
+        print("Type a time in seconds :");
+        time <- readReal();
+    } While (time<0.);
+
+    seconds <- time%60;
+    minutes <- (time//60)%60;
+    hours <- ((time//60)//60)%24;
+    days <- ((time//60)//60)//24;
+    Return (days, hours, minutes, seconds);
+}
+
+// Other versions
+
+algorithme duree () : rien{ 
+    variables duree : reel ,
+              sec, min, h : entier;
+    afficher("Donner une duree en seconde : ") ;
+    duree ← lireClavier_reel() ;
+    h ← duree / 3600 ;
+    min ← (duree mod 3600) / 60 ;
+    sec ← (duree mod 3600) mod 60 ;
+    afficher("HH " + EntierToChaine(h) + "MN " + EntierToChaine(min) + "SEC " +
+                                                    EntierToChaine(sec)) ;
+}
+
+
+algorithme duree () : rien{ 
+    variables duree : reel ,
+              sec, min, h : entier;
+    afficher("Donner une duree en seconde : ") ;
+    duree ← lireClavier_reel() ;
+    h ← duree / 3600 ;
+    min ← (duree - h * 3600) / 60 ;
+    sec ← (duree - ((h * 60) + min) * 60 );
+    afficher("HH " + EntierToChaine(h) + "MN " + EntierToChaine(min) + "SEC " +
+                                                    EntierToChaine(sec)) ;
+}

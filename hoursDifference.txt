@@ -1,0 +1,11 @@
+// Compute the difference between two day moments in seconds
+
+algorithm hourDifference(h1:Integer,m1:Integer,s1:Integer,h2:Integer,m2:Integer,s2:Integer) : Integer{
+
+    variables duration1, duration2: Integer;
+
+    duration1<-durationConversionToSeconds(0, h1, m1, s1);
+    duration2<-durationConversionToSeconds(0, h2, m2, s2);
+
+    Return abs(duration2-duration1);
+}

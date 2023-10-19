@@ -1,0 +1,6 @@
+// Check if an integer x is divisible by an integer y
+
+algorithm isDivisible (x : int, y : int) : Boolean {
+
+    Return (x mod y = 0);
+}

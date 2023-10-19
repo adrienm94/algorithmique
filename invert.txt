@@ -1,0 +1,14 @@
+// Returns the inverted version of a string
+
+algorithm invert(s: array of n Character) : array of n Character{
+
+    variables i : Integer,
+              sInverted : table of n Character;
+
+    For (i<-0;i<n;i<-i+1){
+        sInv[i]<-s[n-i-1];
+    }
+
+    Return sInv;
+
+}

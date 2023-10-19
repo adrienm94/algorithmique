@@ -1,0 +1,19 @@
+// Check if an array is ordered
+
+algorithm isOrdered(tab : array of n Real) : Boolean {
+
+    variables i : Integer;
+              isOrd : Boolean;
+
+    isOrd<-True;
+    i<-1;
+    While (i<n and isOrd=True) Do{
+        If (tab[i]<tab[i-1]) Then{
+            isOrd<-False;
+        }
+        i<-i+1;
+    }
+
+    Return isOrd;
+
+}

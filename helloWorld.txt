@@ -1,0 +1,6 @@
+// Just say "Hello World !"
+
+algorithm helloWorld() : void {
+    print("Hello World !);
+    print("------------");
+}

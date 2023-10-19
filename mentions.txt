@@ -1,0 +1,30 @@
+// Give the mentions depending on exam notes and coefficients
+
+algorithm mentions(n1 : Real, n2 : Real, n3 : Real
+, c1 : Real, c2 : Real, c3 : Real) : void{
+
+    variables mn : Real;
+
+    mn <- meanComputing(n1, n2, n3, c1, c2, c3);
+    If (m<10.) Then {
+        print("Ajourné");
+    }
+    Else {
+        If (m<12.) Then{
+            print("Passable");
+        }
+    }
+    Else {
+        If (m<14.) Then{
+            print("Assez bien");
+        }
+    }
+    Else {
+        If (m<16.) Then{
+            print("Bien");
+        }
+    }
+    Else {
+        print("Très bien");
+    }
+}

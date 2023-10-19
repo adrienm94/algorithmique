@@ -1,0 +1,14 @@
+// Compute sum of i³ for i=0 to n;
+
+algorithm icubesum() : void {
+
+    variables n, i, res : Integer;
+    
+    print("sum of i³ for i=0 to n");
+    n <- readInteger("Enter n :");
+    res <- 0;
+    for (i<-0; i<=n; i<-i+1){
+        res <- res + i**3;
+    }
+    print("The sum equals "+res);
+}

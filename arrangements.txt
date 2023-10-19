@@ -1,0 +1,13 @@
+// Compute the number of arrangements A(k,n) of k elements taken in n
+
+algorithm arrangements(k : Integer, n : Integer){
+
+    variables akn : Integer;
+
+    assert n > 0;
+
+    akn<-factorial(n)/factorial(n-k);
+
+    Return akn;
+
+}

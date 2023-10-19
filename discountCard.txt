@@ -1,0 +1,13 @@
+// Check if a person is allowed to have a discount card depending on one's age and one's gender
+
+algorithm discountCard(age : Real; gender : Char) : void {
+
+    If ((gender='H') AND (age>=65)) Then {
+        print("You are allowed to use this discount card.);
+    }
+    Else {
+        If ((gender='F') and (age>=60)) Then{
+            print("You are allowed to use this discount card.);
+        }
+    }
+}

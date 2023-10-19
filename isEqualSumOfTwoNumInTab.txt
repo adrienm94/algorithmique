@@ -1,0 +1,23 @@
+// Check in an array if the sum of two distinct numbers is equal to a value
+
+algorithm isEqualSumOfTwoNumInTab(tab : array of n Real,r : Real) : Boolean {
+
+    variables i, j : Integer;
+              equality : Boolean;
+
+    equality<-False;
+    i<-0;
+    While (i<n and equality=False) Do{
+        j<-i+1;
+        While (j<n and equality=False) Do{
+            If (tab[i]+tab[j]=r) Then{
+                equality<-True;
+            }
+            j<-j+1;
+        }
+        i<-i+1;
+    }
+
+    Return equality;
+
+}

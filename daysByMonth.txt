@@ -1,0 +1,24 @@
+// Count the number of days in a month without considering any year
+
+algorithm daysByMonth(month : Integer) : Integer{
+
+    variables days : Integer;
+
+    assert 1<=month<=12;
+
+    If (month=1 OR month=3 OR month=5 OR month=7
+        OR month=8 OR month=10 OR month =12) Then{
+            days<-31;
+        }
+    Else{
+        If (month=2) Then{
+            days<-28;
+        }
+    }
+    Else{
+        days<-30;
+    }
+
+    Return days;
+
+}

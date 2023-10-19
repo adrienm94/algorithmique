@@ -1,0 +1,21 @@
+// Compute and print diameter, perimeter and area of a circle with a read radius
+
+algorithm circle() : void{
+
+    variables radius, diameter, perimeter, area : Real;
+
+    Repeat {
+        print("Give a radius :");
+        radius<-readReal();
+    } While (radius<0.0);
+
+    diameter<-2.0*radius;
+    perimeter<-diameter*PI;
+    area<-(radius)²*PI;
+
+    print("Circle of radius "+RealToChaine(radius)+" : "
+            +"\n"+"Diameter : "+RealToChaine(diameter)
+            +"\n"+"Perimeter : "+RealToChaine(perimeter)
+            +"\n"+"Area : "+RealToChaine(area));
+
+}

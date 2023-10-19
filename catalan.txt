@@ -1,0 +1,21 @@
+// Compute the nth number of Catalan
+
+algorithm catalan(n : Integer) : Integer {
+
+    variables cn, i : Integer;
+
+    assert (n>=0);
+
+    If (n<=1) Then{
+        cn <- 1;
+    }
+    Else{
+    	cn <- 0;
+    	For (i <- 0; i < n; i <- i+1){
+    	    cn <- cn + catalan(i)*catalan(n-1-i);
+    	} 
+    }
+
+    Return cn;
+
+}

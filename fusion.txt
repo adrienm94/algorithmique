@@ -1,0 +1,31 @@
+algorithm fusion(tab1 : array of n Real, tab2 : array of m Real) : array of n+m Real{
+
+    	variables i1, i2, i3 : Integer,
+              	tab1, tab2, tab3 : table of m+n Real;
+              
+    	i1<-0;
+	i2<-0;
+	For (i3<-0;i3<n+m;i3<-i3+1){
+	    If (i1<n AND i2<m){
+		If (tab1[i1]<tab2[i2]) Then{
+		    tab3[i3]=tab1[i1];
+		    i1<-i1+1;
+		}
+		Else{
+		    tab3[i3]=tab2[i2];
+		    i2<-i2+1;
+		}
+	    }
+	    Else {
+		If (i1<n) Then{
+		    tab3[i3]=tab1[i1];
+		    i1<-i1+1;
+		}
+	    }
+	    Else{
+		tab3[i3]=tab2[i2];
+		i2<-i2+1;
+	    }
+	}
+	
+	Return tab3;

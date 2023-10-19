@@ -1,0 +1,21 @@
+// Give the number of even digits in a number (base 10)
+
+algorithm countNumberOfEvenDigits(n:Integer, digit : Integer): Integer {
+    
+    variables nStr : String,
+              numberOfEvenDigits, i : Integer;
+
+    assert n>=0;
+
+    nStr<-IntegerToString(n);
+    numberOfEvenDigits<-0;
+
+    For(i<-0;i<length(nStr);i<-i+1){
+        If (nStr[i]%2=0) Then{
+            numberOfEvenDigits=numberOfEvenDigits+1;
+        }
+    }
+
+
+    Return numberOfEvenDigits;
+}

@@ -1,0 +1,28 @@
+// Give the minimum between three numbers
+
+algorithm min_3(n1 : Real, n2 : Real, n3 : Real) : Real {
+
+    Return min(n1, min(n2, n3));
+
+}
+
+// Another version without using min algorithm
+
+algorithm min_3(n1 : Real, n2 : Real, n3 : Real) : Real {
+
+    variables min : Real;
+
+    If (a < b) AND (a < c) Then {
+       min ← a ;
+    } 
+    Else {
+        If (b<c) Then {
+            min <- b;
+        }
+    }
+    Else {
+        min ← c ;
+    }
+
+    Return min;
+}

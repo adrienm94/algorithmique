@@ -1,0 +1,16 @@
+// Count the number of days in a year
+
+algorithm daysByYears(year : Integer) : Integer{
+
+    variables days : Integer;
+
+    If (isLeapYear(year)) Then{
+        days<-366;
+    }
+    Else{
+        days<-365;
+    }
+
+    Return days;
+
+}

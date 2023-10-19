@@ -1,0 +1,49 @@
+// Give the order between two dates
+
+algorithm dateOrder(a1 : Integer, m1 : Integer, d1 : Integer,
+                    a2 : Integer, m2 : Integer, d2 : Integer,) : Integer{
+
+    variables o : Integer;
+                
+    assert a1>0;
+    assert a2>0;
+    assert 1<=m1<=12;
+    assert 1<=m2<=12;
+    assert 1<=d1<=daysByYearMonth(m1);
+    assert 1<=d2<=daysByYearMonth(m2);
+
+    If (a1>a2){
+        o<-1;
+    }
+    Else{
+        If (a1<a2) Then {
+            o<--1;
+        }
+    }
+    Else{
+        If (m1>m2){
+            o<-1;
+        }
+        Else{
+            If (m1<m2) Then {
+            o<--1;
+            }
+        }
+        Else{
+            If (d1>d2){
+                o<-1;
+            }
+            Else{
+                If (d1<d2) Then {
+                    o<--1;
+                }
+            }
+            Else{
+                o<-0;
+            }
+        }
+    }
+
+    Return o;
+
+}

@@ -1,0 +1,24 @@
+// Give the order between two day moments
+// Return an integer whose value depends on the time order
+
+algorithm hourOrder(h1:Integer,m1:Integer,s1:Integer,h2:Integer,m2:Integer,s2:Integer) : Integer{
+
+    variables o, duration1, duration2: Integer;
+
+    duration1<-durationConversionToSeconds(0, h1, m1, s1);
+    duration2<-durationConversionToSeconds(0, h2, m2, s2);
+
+    If (duration1<duration2) Then{
+        o<-1;
+    }
+    Else {
+        If (duration2<duration1) Then{
+            o<--1;
+        }
+    }
+    Else{
+        o<-0;
+    }
+
+    Return o;
+}

@@ -1,0 +1,13 @@
+// Prints any prime number lesser than a given number
+
+algorithm firstPrimeNumbers(num : Integer) : void {
+
+    variables i : Integer;
+
+    For (i <- 2; i < num; i <- i + 1){
+        If (isPrimeNumber(i)) Then {
+            print(i+"is a prime number lesser than"+num);
+        }
+    }
+
+}

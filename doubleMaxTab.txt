@@ -1,0 +1,20 @@
+// Returns an integer table whose each element is the maximum of matching elements by index in two given tables
+
+algorithm doubleMaxTab(tab1 : table of n Integer, tab2 : table of n Integer) : table of n Integer {
+
+    variables i : Integer,
+              res : table of n Integer;
+
+    res <- [];
+
+    For (i <- 0 ; i < n; i <- i + 1){
+        If (tab1[i] <= tab2[i]){
+            res[i] <- tab2[i];
+        }
+        Else {
+            res[i] <- tab1[i];
+        }
+    }
+
+    Return res;
+}

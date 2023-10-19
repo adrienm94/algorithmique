@@ -1,0 +1,13 @@
+// Compute and print a daytime compared to another
+
+algorithm hourShifting(difference : Integer, h1 : Integer, m1 : Integer, s1 : Integer) : void {
+
+    variables h2, m2, s2 : Integer;
+              newDayTime : Integer;
+
+    assert 0<=difference<24*3600;
+
+    newDayTime<-durationConversionToSeconds(0, h1, m1, s1)+difference;
+
+    Return durationConversionFromSeconds(newDayTime);
+}

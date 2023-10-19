@@ -1,0 +1,21 @@
+// Compute factorial of a number
+
+algorithm factorial(number : Integer):Integer{
+
+    variables res, i : Integer;
+
+    assert number>0;
+
+    If (number=0) Then{
+        res<-1;
+    }
+    Else{
+        For(i<-1;i<=number;i<-i+1){
+            res<-res*i;
+            // res<-res*(number+1-i)
+        }
+    }
+
+    Return res;
+
+}

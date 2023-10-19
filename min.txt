@@ -1,0 +1,16 @@
+// Give the minimum between two numbers
+
+algorithm min(n1 : Real, n2 : Real) : Real {
+
+    variables min : Real;
+
+    If (n1<n2) Then {
+        min <- n1; 
+    }
+    Else {
+        min <- n2;
+    }
+
+    Return min;
+
+}

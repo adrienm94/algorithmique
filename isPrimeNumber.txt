@@ -1,0 +1,20 @@
+// Check if an integer number is prime
+
+algorithm isPrimeNumber(n : Integer) : Boolean{
+
+    variables i : Integer,
+              isPrime : Boolean;
+
+    assert n>1;
+
+    isPrime<-True;
+    i<-2;
+    While (i<n AND isPrime) Do{
+        If (n%i=0) Then{
+            isPrime<-False;
+        } 
+        i<-i+1;
+    }
+
+    Return isPrime;
+}

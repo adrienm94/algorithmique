@@ -1,0 +1,20 @@
+// Given an integer matrix and a threshold (between 0 and 255), returns a new one with only values 0 and 255 
+
+algorithm blackAndWhite(matrix : array of n array of m Integer, threshold : Integer) : array of n array of m Integer{
+
+    variables lin, col : Integer
+              newMatrix : array of n array of m Integer,
+
+    For (lin<-0;lin<n;lin<-lin+1){
+        For (col<-0;col<m;col<-col+1){
+            If (Matrix[lin][col]<threshold) Then{
+                newMatrix[lin][col]<-0;
+            }
+            Else {
+                newMatrix[lin][col]<-255;
+            }
+        }
+    }
+
+    Return newMatrix;
+}

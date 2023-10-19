@@ -1,0 +1,22 @@
+// Give the digit at a given rank in a number (base 10)
+// The rank is the power of 10 that c represents
+
+algorithm digitRank(n:Integer, i:Integer):Integer{
+
+    variables rank, digit : Integer,
+              nStr : String;
+
+    assert n>10^i;
+
+    nStr<-IntegerToString(n);
+
+    Repeat{
+        print("Give a rank :");
+        rank<-readInteger();
+    }While(rank<0 AND rank>countNumberOfDigits(n)-1);
+
+    digit<-StringToInteger(nStr[countNumberOfDigits(n)-1-rank]);
+
+    Return digit;
+
+}

@@ -1,0 +1,32 @@
+// To search a value within an ordered array. Returns the index of the found value or -1 if the value is not found
+
+algorithm dichotomicSearch(tab: array of n Real, value : Real) : Integer {
+
+    variables i, index, min, max, middle : Integer;
+
+    If NOT(isOrdered(tab)) Then{
+        ordering(tab);
+    }
+
+    index<--1;
+    min<-0;
+    max<-n-1;
+
+    While (min<=max and index=-1){
+        middle<-(min+max)/2;
+        If (tab[middle]<value) Then{
+            min<-middle+1;
+        }
+        Else {
+            If (tab[middle]>value) Then{
+                max<-middle-1;
+            }
+        }
+        Else {
+            index<-middle;
+        }
+    }
+    
+    Return index;
+
+}

@@ -1,0 +1,28 @@
+// Check if a year is leap
+
+algorithm isLeapYear(year : Integer) : Boolean {
+
+    variables isLeap : Boolean;
+
+    assert y>0;
+
+    If (y%4=0) Then{
+        If (y%100=0) Then{
+            isLeap<-False;
+        }
+        Else{
+            isLeap<-True;
+        }
+    }
+    Else {
+        If (y%400=0) Then{
+            isLeap<-True;
+        }
+        Else {
+            isLeap<-False;
+        }
+    }
+
+    Return isLeap;
+
+}
